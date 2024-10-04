@@ -11,10 +11,7 @@ function App() {
     <div className="flex h-screen bg-gray-100">
       <Sidebar setContent={setContent} />
       <div className="flex flex-col flex-grow">
-        {/* Top Bar */}
         <TopBar />
-
-        {/* Content Area */}
         <div className="flex-grow p-4">
           <Content content={content} />
         </div>

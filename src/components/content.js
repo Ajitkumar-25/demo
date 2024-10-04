@@ -71,21 +71,21 @@ const pieData = {
 };
 
 const barData = {
-  labels: ["Consultation Types"], // This serves as a placeholder label for the x-axis
+  labels: ["Consultation Types"],
   datasets: [
     {
       label: "Total Consultations",
-      data: [40000], // Only show data for Total Consultations
+      data: [40000],
       backgroundColor: "#3B82F6",
     },
     {
       label: "Cancelled",
-      data: [15000], // Only show data for Cancelled
+      data: [15000],
       backgroundColor: "#F87171",
     },
     {
       label: "Completed",
-      data: [35000], // Only show data for Completed
+      data: [35000],
       backgroundColor: "#10B981",
     },
   ],
@@ -142,10 +142,8 @@ const doctorData = [
     totalAmount: "$1500",
     imageUrl: "https://via.placeholder.com/30",
   },
-  // Add more rows as needed
 ];
 
-// TDM Services Insights Card
 const TDMServicesInsightsCard = () => (
   <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-lg w-full">
     <h3 className="text-md lg:text-lg font-semibold mb-4">
@@ -189,7 +187,6 @@ const TDMServicesInsightsCard = () => (
   </div>
 );
 
-// Consultations Bar Chart Card
 const ConsultationBarChart = () => (
   <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-lg w-full">
     <h3 className="text-md lg:text-lg font-semibold mb-4">Consultations</h3>
@@ -197,7 +194,6 @@ const ConsultationBarChart = () => (
   </div>
 );
 
-// Dashboard Card Component
 const DashboardCard = ({ title, services }) => (
   <div className="bg-white p-4 lg:p-6 rounded-2xl shadow-lg h-full">
     <h3 className="text-md lg:text-lg font-semibold mb-4">{title}</h3>
@@ -219,7 +215,6 @@ const DashboardCard = ({ title, services }) => (
 
 const DashboardContent = () => (
   <div className="p-4 space-y-6">
-    {/* Cards and Pie Chart Layout */}
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
         <DashboardCard
@@ -304,7 +299,6 @@ const DoctorListContent = () => (
 
 const TDMManagementContent = () => (
   <div className="p-4 space-y-6">
-    {/* Header Section */}
     <div className="flex justify-between items-center bg-white p-6 rounded-2xl shadow-lg">
       <div className="flex items-center space-x-4">
         <span className="bg-green-100 text-green-600 px-4 py-2 rounded-full">
@@ -332,7 +326,6 @@ const TDMManagementContent = () => (
       </div>
     </div>
 
-    {/* Tabs Navigation */}
     <div className="bg-white p-4 rounded-2xl shadow-lg">
       <div className="flex space-x-8 border-b">
         <a

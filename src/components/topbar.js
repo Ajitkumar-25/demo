@@ -5,7 +5,6 @@ import { FaQuestionCircle } from "react-icons/fa";
 const TopBar = () => {
   return (
     <div className="flex justify-between items-center bg-white p-4 shadow-sm">
-      {/* Search Bar */}
       <div className="flex items-center space-x-2">
         <FiSearch className="text-gray-500" size={20} />
         <input
@@ -15,9 +14,7 @@ const TopBar = () => {
         />
       </div>
 
-      {/* Right Side Icons and Profile */}
       <div className="flex items-center space-x-6">
-        {/* Notifications */}
         <div className="relative">
           <FiBell size={24} className="text-gray-600" />
           <span className="absolute top-0 right-0 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
@@ -25,13 +22,10 @@ const TopBar = () => {
           </span>
         </div>
 
-        {/* Help Icon */}
         <FaQuestionCircle size={24} className="text-gray-600" />
 
-        {/* Divider */}
         <div className="border-l h-8 border-gray-300 mx-4 hidden md:block"></div>
 
-        {/* Profile Section */}
         <div className="flex items-center space-x-2">
           <img
             src="https://randomuser.me/api/portraits/men/75.jpg"
